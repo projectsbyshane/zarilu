@@ -30,7 +30,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: var(--max-site-width);
-  /* padding: 0rem 1rem; */
   margin: auto;
 }
 main {
@@ -61,26 +60,36 @@ nav {
   color: var(--bg-clr-light);
 }
 .hero {
-  height: 60vh;
+  min-height: 60vh;
   width: 100%;
   background-color: var(--bg-clr-light);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 5rem;
 }
-.hero h1 {
-  font-size: 8rem;
+.hero img{
+  max-width: 800px;
+  height: auto;
+  display: block;
+}
+.hero .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 @media (max-width: 800px) {
-  .hero h1 {
-    font-size: 5rem;
+  .hero img{
+  /* max-width: 600px; */
+  max-width: 100%;
   }
 }
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 3.5rem;
-  }
-}
+
 .product {
   width: 100%;
   background-color: var(--bg-clr-light);

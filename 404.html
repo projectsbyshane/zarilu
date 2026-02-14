@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Lights Out!</title>
+    <style>
+        :root {
+            --bg-dark: #1a1a1a;
+            --flame-orange: #ff9d00;
+            --text-light: #f4f4f4;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 6rem;
+            margin: 0;
+            color: var(--flame-orange);
+            text-shadow: 0 0 20px rgba(255, 157, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.8;
+        }
+
+        .candle-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            background-color: var(--flame-orange);
+            color: var(--bg-dark);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive Breakpoint for Samsung A35 / Mobile */
+        @media (max-width: 480px) {
+            h1 { font-size: 4rem; }
+            h2 { font-size: 1.5rem; }
+            .container { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="candle-icon">🕯️</span>
+        <h1>404</h1>
+        <h2>Oops! Lights out.</h2>
+        <p>
+            It looks like this wick has burnt out or the page never existed. 
+            Do us a favour and head back before we're all left sitting in the dark.
+        </p>
+        <a href="/" class="btn">Relight the way home</a>
+    </div>
+
+</body>
+</html>
