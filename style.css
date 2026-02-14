@@ -69,9 +69,11 @@ nav {
   padding-top: 5rem;
 }
 .hero img{
+  width: 100%;
   max-width: 800px;
   height: auto;
   display: block;
+  overflow: hidden;
 }
 .hero .sr-only {
   position: absolute;
@@ -83,12 +85,12 @@ nav {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-@media (max-width: 800px) {
-  .hero img{
+/* @media (max-width: 800px) { */
+  /* .hero img{ */
   /* max-width: 600px; */
-  max-width: 100%;
-  }
-}
+  /* max-width: 100%; */
+  /* } */
+/* } */
 
 .product {
   width: 100%;
