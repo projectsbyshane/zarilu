@@ -103,7 +103,7 @@ h2 {
     gap: 15px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 400px) {
   .card_container {
     grid-template-columns: 1fr;
     gap: 15px;
