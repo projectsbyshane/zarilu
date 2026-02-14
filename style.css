@@ -1,0 +1,145 @@
+:root {
+  --max-site-width: 1400px;
+  --bg-clr-light: #eee;
+  --bg-clr-dark: #222;
+  --txt-clr-dark: #222;
+  --txt-clr-light: #eee;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-weight: 400;
+}
+body {
+  background-color: var(--bg-clr-light);
+  color: var(--txt-clr-dark);
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: var(--max-site-width);
+  padding: 0rem 1rem;
+  margin: auto;
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+nav {
+  z-index: 10;
+  top: 0;
+  position: sticky;
+  padding: 1rem 2rem;
+  background-color: var(--bg-clr-dark);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--bg-clr-light);
+}
+.hero {
+  height: 60vh;
+  width: 100%;
+  background-color: var(--bg-clr-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 8rem;
+}
+.product {
+  width: 100%;
+  background-color: var(--bg-clr-light);
+}
+.card_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+h2 {
+  margin-top: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-top: #ccc solid 2px;
+}
+@media (max-width: 800px) {
+  .card_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .card_container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+.card_container .card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: aquamarine;
+}
+.card_container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.contact {
+  width: 100%;
+  background-color: var(--bg-clr-light);
+  padding-bottom: 5rem;
+}
+.contact_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  width: 100%;
+  min-height: 100%;
+}
+@media (max-width: 800px) {
+  .contact_container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    height: auto;
+  }
+}
+.contact_container .contact_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: justify;
+  height: 100%;
+  overflow: hidden;
+}
+.contact_container .contact_card img {
+  max-width: 100%;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+footer {
+  color: var(--txt-clr-light);
+  width: 100%;
+  background-color: var(--bg-clr-dark);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
