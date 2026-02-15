@@ -222,7 +222,7 @@ footer li{
 }
 footer a{  
   line-height: 2rem;
-  color: var(--brand-clr);
+  color: var(--txt-clr-dark);
 }
 footer .copyright{
   width: 100%;
